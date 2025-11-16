@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 15 23 42;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--fg));
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 40%);
+}
+
+.container-responsive {
+  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-lg shadow-xl border border-white/40;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-lg bg-brand-600 text-white px-4 py-2 font-medium shadow-glow hover:bg-brand-700 transition-colors;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-brand-50 text-brand-700 px-3 py-1 text-xs font-semibold;
+}
